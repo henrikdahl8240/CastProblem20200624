@@ -1,0 +1,14 @@
+﻿1. Add-Migration -Context CastProblemDbContext -Name Initial
+
+2. Update-Database -Context CastProblemDbContext
+
+3. Run the solution.
+
+4. http://localhost:26977/seed
+This seeds the database.
+
+5. http://localhost:26977/odata/BikeShop_GoodCategorys/CastProblem20200624.BikeShop_GoodCategory_NonRoot?$expand=CategoryChildren($select=ID,Version),Contents($select=ID,Version,CastProblem20200624.BikeShop_Good_Z3950Target/ISIL_Number,CastProblem20200624.BikeShop_Good__Local/Preferred_PropertyUri_For_BibliographicalRecord)
+This throws the exception.
+
+6. http://localhost:26977/odata/BikeShop_GoodCategorys/CastProblem20200624.BikeShop_GoodCategory_NonRoot?$expand=CategoryChildren($select=ID,Version),Contents
+This works without any problem.

@@ -1,0 +1,13 @@
+﻿Add-Migration -Context CastProblemDbContext -Name Initial
+Remove-Migration -Context CastProblemDbContext
+Update-Database -Context CastProblemDbContext
+Drop-Database -Context CastProblemDbContext
+Script-Migration -Context CastProblemDbContext
+
+
+
+get-help Update-Database
+
+
+
+Remove-Migration -Context CastProblemDbContext; Add-Migration -Context CastProblemDbContext -Name Initial; Update-Database -Context CastProblemDbContext

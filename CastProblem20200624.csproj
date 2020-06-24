@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200624162600_Initial.cs" />
+    <Compile Remove="Migrations\20200624162600_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624162701_Initial.cs" />
+    <Compile Remove="Migrations\20200624162701_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624181808_Initial.cs" />
+    <Compile Remove="Migrations\20200624181808_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624191533_Initial.cs" />
+    <Compile Remove="Migrations\20200624191533_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624191940_Initial.cs" />
+    <Compile Remove="Migrations\20200624191940_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624193407_Initial.cs" />
+    <Compile Remove="Migrations\20200624193407_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624202751_Initial.cs" />
+    <Compile Remove="Migrations\20200624202751_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624205356_Initial.cs" />
+    <Compile Remove="Migrations\20200624205356_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624210009_Initial.cs" />
+    <Compile Remove="Migrations\20200624210009_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624210506_Initial.cs" />
+    <Compile Remove="Migrations\20200624210506_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624211237_Initial.cs" />
+    <Compile Remove="Migrations\20200624211237_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624212051_Initial.cs" />
+    <Compile Remove="Migrations\20200624212051_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624212913_Initial.cs" />
+    <Compile Remove="Migrations\20200624212913_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624214004_Initial.cs" />
+    <Compile Remove="Migrations\20200624214004_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200624214405_Initial.cs" />
+    <Compile Remove="Migrations\20200624214405_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.0-preview.5.20278.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-preview.5.20278.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-preview.5.20278.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

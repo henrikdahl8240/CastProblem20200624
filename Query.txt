@@ -1,0 +1,5 @@
+﻿This query causes throwing of an exception:
+http://localhost:26977/odata/BikeShop_GoodCategorys/CastProblem20200624.BikeShop_GoodCategory_NonRoot?$expand=CategoryChildren($select=ID,Version),Contents($select=ID,Version,CastProblem20200624.BikeShop_Good_Z3950Target/ISIL_Number,CastProblem20200624.BikeShop_Good__Local/Preferred_PropertyUri_For_BibliographicalRecord)
+
+This query works.
+http://localhost:26977/odata/BikeShop_GoodCategorys/CastProblem20200624.BikeShop_GoodCategory_NonRoot?$expand=CategoryChildren($select=ID,Version),Contents
